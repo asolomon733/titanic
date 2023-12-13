@@ -53,7 +53,7 @@ def main():
 
     if st.button('Predict'):  # When the 'Predict' button is clicked
         final_df = preprocessor(input_df)  # Preprocess the collected data
-        prediction = model.predict(final_df) # Use the model to predict the outcome
+        prediction = model.predict(final_df)[0] # Use the model to predict the outcome
         
         # Display the prediction result
         if prediction == 1:
