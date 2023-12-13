@@ -58,7 +58,7 @@ def main():
         # Display the prediction result
         if prediction == 1:
             st.write('the passenger survived')
-        else:
+        elif prediction == 0:
             st.write('the passenger died')
 
 # Run the main function when the script is executed directly
